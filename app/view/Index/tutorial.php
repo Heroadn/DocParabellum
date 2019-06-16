@@ -76,10 +76,10 @@ class <span class="blue">nome</span>Controller extends </span><span class="blue"
             <code class="language-html" data-lang="html">
             class <span class="blue">nome</span>Controller extends </span><span class="blue">Controller</span>
             {
-                public function listar($id='',$name='')
+                public function listar($id='')
                 {
-                    <span class="blue">$this-><span class="red">set</span>('Usuarios',$this->daoUsuarios->findAll());</span>
-                    <span class="blue">$this-></span>view('Listar',['id' =>$id, 'name' =>$name]);
+                //Os atribuos em azul serão passados para a view como variaveis
+                <span class="blue">$this-></span>view('Listar',<span class="blue">['id' =>$id, 'name' =>$name,'Usuarios'=>$this->daoUsuarios->findAll()]</span>);
                     <span class="blue">$this-></span>view->page_title = 'Listar';
                     <span class="blue">$this-></span>view->render();
                 }
