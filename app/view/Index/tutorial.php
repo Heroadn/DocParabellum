@@ -80,9 +80,9 @@ class <span class="blue">nome</span>Controller extends </span><span class="blue"
                 {
                     //Os atribuos em azul serão passados para a view como variaveis
                     //<span class="blue">'variavel'</span>=>'valor da variavel'
-                    <span class="blue">$this-></span>view('Listar',[<span class="blue">'id'</span> =>$id, <span class="blue">'name'</span>=>$name,<span class="blue">'Usuarios'</span>=>$this->daoUsuarios->findAll()]);
-                    <span class="blue">$this-></span>view->page_title = 'Listar';
-                    <span class="blue">$this-></span>view->render();
+                    $this->view('Listar',[<span class="blue">'id'</span> =>$id, <span class="blue">'name'</span>=>$name,<span class="blue">'Usuarios'</span>=>$this->daoUsuarios->findAll()]);
+                    $this->view->page_title = 'Listar';
+                    $this->view->render();
                 }
             }
             </code></pre></figure>
