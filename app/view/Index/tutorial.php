@@ -7,12 +7,13 @@ Criar um controle é relativamente facil, como se pode ver abaixo
 class <span class="blue">nome</span>Controller extends </span><span class="blue">Controller</span>
 {
     public function <span class="red">action</span>($id='',$name=''){
-        //Aqui é criado a view, respectivamente deve ter um arquivo na pasta view com o nome da function
+        <span class="blue">//Aqui é criado a view, respectivamente deve ter um arquivo na pasta view com o nome da function</span>
         $this->view(['id' =>$id, 'name' =>$name]);
         $this->view->page_title = 'INDEX';
         $this->view->render();
     }
 
+        <span class="blue">//Essa function aponta para a view  view/nome/contato</span>
     public function <span class="red">contato</span>($id='',$name=''){
         $this->view(['id' =>$id, 'name' =>$name]);
         $this->view->page_title = 'INDEX';
