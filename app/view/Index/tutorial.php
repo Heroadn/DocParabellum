@@ -78,8 +78,8 @@ class <span class="blue">nome</span>Controller extends </span><span class="blue"
             {
                 public function listar($id='')
                 {
-                //Os atribuos em azul serão passados para a view como variaveis
-                <span class="blue">$this-></span>view('Listar',<span class="blue">['id' =>$id, 'name' =>$name,'Usuarios'=>$this->daoUsuarios->findAll()]</span>);
+                    //Os atribuos em azul serão passados para a view como variaveis
+                    <span class="blue">$this-></span>view('Listar',<span class="blue">['id' =>$id, 'name' =>$name,'Usuarios'=>$this->daoUsuarios->findAll()]</span>);
                     <span class="blue">$this-></span>view->page_title = 'Listar';
                     <span class="blue">$this-></span>view->render();
                 }
