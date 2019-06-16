@@ -80,13 +80,13 @@ class <span class="blue">nome</span>Controller extends </span><span class="blue"
                 {
                     //Os atribuos em azul serão passados para a view como variaveis
                     //<span class="blue">'variavel'</span>=>'valor da variavel'
-                    $this->view('Listar',[<span class="blue">'id'</span> =>$id, <span class="blue">'name'</span>=>$name,<span class="blue">'Usuarios'</span>=>$this->daoUsuarios->findAll()]);
+                    $this->view('Listar',[<span class="blue">'id'</span> =>$id,<span class="blue">'Usuarios'</span>=>$this->daoUsuarios->findAll()]);
                     $this->view->page_title = 'Listar';
                     $this->view->render();
                 }
             }
             </code></pre></figure>
-        Onde a variavel é adicionada a view em forma de variavel <span class="blue">$Usuarios</span>
+        Onde a variavel é adicionada a view em forma de variavel <span class="blue">$Usuarios</span>, <span class="blue">$id</span>.
     </div>
     <div class="col-md-12 col-sm-12">
         <img style="width: 80%;height: 80%;" src="<?php echo IMG . 'ad_view.png'?>">
